@@ -1,0 +1,132 @@
+{
+    "status_code": 0,
+    "message": null,
+    "errors": null,
+    "description": null,
+    "institution_accounts": [
+        {
+            "institution_id": "mock",
+            "account_id": "8de2de9eab01b935b21abcbed11adf26",
+            "account_number": {
+                "iban": null,
+                "number": "50000000",
+                "sort_code": "01-21-31",
+                "swift_bic": "CPBKGB00"
+            },
+            "account_type": "CURRENT_ACCOUNT",
+            "balance": {
+                "current_balance": {
+                    "currency_code": "GBP",
+                    "amount": 50.0
+                },
+                "available_balance_including_overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 514.41
+                },
+                "overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 500.0
+                },
+                "last_updated_date_time": "2020-11-09T15:08:04.6797472"
+            },
+            "display_name": "TRANSACTION ACCOUNT 3",
+            "provider_display_name": "MOCK",
+            "last_updated_date_time": "2020-11-09T15:08:04.4857685",
+            "provider_logo_uri": "https://truelayer-client-logos.s3-eu-west-1.amazonaws.com/banks/banks-icons/mock-icon.svg",
+            "used_for_deposit": false
+        },
+        {
+            "institution_id": "mock",
+            "account_id": "89c3139784a055b9b47998f9dce9122e",
+            "account_number": {
+                "iban": null,
+                "number": "30000000",
+                "sort_code": "01-21-31",
+                "swift_bic": "CPBKGB00"
+            },
+            "account_type": "CURRENT_ACCOUNT",
+            "balance": {
+                "current_balance": {
+                    "currency_code": "GBP",
+                    "amount": 30.0
+                },
+                "available_balance_including_overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 294.41
+                },
+                "overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 300.0
+                },
+                "last_updated_date_time": "2020-11-09T15:08:06.0576906"
+            },
+            "display_name": "TRANSACTION ACCOUNT 2",
+            "provider_display_name": "MOCK",
+            "last_updated_date_time": "2020-11-09T15:08:05.8861503",
+            "provider_logo_uri": "https://truelayer-client-logos.s3-eu-west-1.amazonaws.com/banks/banks-icons/mock-icon.svg",
+            "used_for_deposit": false
+        },
+        {
+            "institution_id": "mock",
+            "account_id": "56c7b029e0f8ec5a2334fb0ffc2fface",
+            "account_number": {
+                "iban": null,
+                "number": "10000000",
+                "sort_code": "01-21-31",
+                "swift_bic": "CPBKGB00"
+            },
+            "account_type": "CURRENT_ACCOUNT",
+            "balance": {
+                "current_balance": {
+                    "currency_code": "GBP",
+                    "amount": 10.0
+                },
+                "available_balance_including_overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 74.41
+                },
+                "overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 100.0
+                },
+                "last_updated_date_time": "2020-11-09T15:08:06.132501"
+            },
+            "display_name": "TRANSACTION ACCOUNT 1",
+            "provider_display_name": "MOCK",
+            "last_updated_date_time": "2020-11-09T15:08:05.9192774",
+            "provider_logo_uri": "https://truelayer-client-logos.s3-eu-west-1.amazonaws.com/banks/banks-icons/mock-icon.svg",
+            "used_for_deposit": false
+        },
+        {
+            "institution_id": "mock",
+            "account_id": "3c6edb9484ecd581dc1cedde8bedb1f1",
+            "account_number": {
+                "iban": null,
+                "number": "20000000",
+                "sort_code": "01-21-31",
+                "swift_bic": "CPBKGB00"
+            },
+            "account_type": "SAVINGS_ACCOUNT",
+            "balance": {
+                "current_balance": {
+                    "currency_code": "GBP",
+                    "amount": 20.0
+                },
+                "available_balance_including_overdraft": {
+                    "currency_code": "GBP",
+                    "amount": 184.41
+                },
+                "overdraft": {
+                    "currency_code": "GBP",
+                    "amount": null
+                },
+                "last_updated_date_time": "2020-11-09T15:08:04.7645025"
+            },
+            "display_name": "SAVINGS ACCOUNT 1",
+            "provider_display_name": "MOCK",
+            "last_updated_date_time": "2020-11-09T15:08:04.5646217",
+            "provider_logo_uri": "https://truelayer-client-logos.s3-eu-west-1.amazonaws.com/banks/banks-icons/mock-icon.svg",
+            "used_for_deposit": true
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicantKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@APPLICANT@</string>
+		<key>APPLICANT</key>
+		<dict>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>other</key>
+			<string>Applicant %u</string>
+		</dict>
+	</dict>
+	<key>DependentKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@DEPENDENT@</string>
+		<key>DEPENDENT</key>
+		<dict>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>other</key>
+			<string>Dependant %u</string>
+		</dict>
+	</dict>
+	<key>NumberOfBedroomsKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@BEDROOMS@</string>
+		<key>BEDROOMS</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Studio</string>
+			<key>one</key>
+			<string>1 bedroom</string>
+			<key>other</key>
+			<string>%u bedroom</string>
+		</dict>
+	</dict>
+	<key>YearsAgoKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@YEARSAGO@</string>
+		<key>YEARSAGO</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Less than one year ago</string>
+			<key>one</key>
+			<string>%u year ago</string>
+			<key>other</key>
+			<string>%u years ago</string>
+		</dict>
+	</dict>
+	<key>SearchRadiusKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@RADIUS@</string>
+		<key>RADIUS</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>This area only</string>
+			<key>one</key>
+			<string>Within 1 mile</string>
+			<key>other</key>
+			<string>Within %u miles</string>
+		</dict>
+	</dict>
+	<key>InMonthsKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@MONTHS@</string>
+		<key>MONTHS</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Now</string>
+			<key>one</key>
+			<string>In %u month</string>
+			<key>other</key>
+			<string>In %u months</string>
+		</dict>
+	</dict>
+	<key>MonthsUntilKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@MONTHS@</string>
+		<key>MONTHS</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Now</string>
+			<key>one</key>
+			<string>%u Month Until</string>
+			<key>other</key>
+			<string>%u Months Until</string>
+		</dict>
+	</dict>
+	<key>MonthsKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@MONTHS@</string>
+		<key>MONTHS</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Now</string>
+			<key>one</key>
+			<string>%u month</string>
+			<key>other</key>
+			<string>%u months</string>
+		</dict>
+	</dict>
+	<key>YearsKey</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@YEARS@</string>
+		<key>YEARS</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Now</string>
+			<key>one</key>
+			<string>%u year</string>
+			<key>other</key>
+			<string>%u years</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

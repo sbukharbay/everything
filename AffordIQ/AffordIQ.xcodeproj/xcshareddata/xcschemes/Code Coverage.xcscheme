@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1430"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E24F5AD5253DA051006B2009"
+               BuildableName = "AffordIQ.app"
+               BlueprintName = "AffordIQ"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E24F5AEB253DA054006B2009"
+               BuildableName = "AffordIQUITests.xctest"
+               BlueprintName = "AffordIQUITests"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "MOCKING"
+            value = "true"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E252AA8C253DAB2800FFE284"
+            BuildableName = "AffordIQAPI.framework"
+            BlueprintName = "AffordIQAPI"
+            ReferencedContainer = "container:AffordIQ.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E254540025404EBE007FAC86"
+            BuildableName = "AffordIQControls.framework"
+            BlueprintName = "AffordIQControls"
+            ReferencedContainer = "container:AffordIQ.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E216925E2553043700D09AB6"
+            BuildableName = "AffordIQFoundation.framework"
+            BlueprintName = "AffordIQFoundation"
+            ReferencedContainer = "container:AffordIQ.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E254542D2541A619007FAC86"
+            BuildableName = "AffordIQUI.framework"
+            BlueprintName = "AffordIQUI"
+            ReferencedContainer = "container:AffordIQ.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E252AA94253DAB2800FFE284"
+               BuildableName = "AffordIQAPITests.xctest"
+               BlueprintName = "AffordIQAPITests"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E21692662553043700D09AB6"
+               BuildableName = "AffordIQFoundationTests.xctest"
+               BlueprintName = "AffordIQFoundationTests"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E22D0C6A25D6BC6700D746F7"
+               BuildableName = "AffordIQControlsTests.xctest"
+               BlueprintName = "AffordIQControlsTests"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FD856DD328648A5D00E593B6"
+               BuildableName = "AffordIQUnitTests.xctest"
+               BlueprintName = "AffordIQUnitTests"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7D1EDEF1294C725B006CCEED"
+               BuildableName = "AffordIQNetworkKitTests.xctest"
+               BlueprintName = "AffordIQNetworkKitTests"
+               ReferencedContainer = "container:AffordIQ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E24F5AD5253DA051006B2009"
+            BuildableName = "AffordIQ.app"
+            BlueprintName = "AffordIQ"
+            ReferencedContainer = "container:AffordIQ.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "MOCKING"
+            value = "true"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "SIMULATE_ACCOUNTS_ERROR"
+            value = "true"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "SIMULATE_ACCOUNTS_EXPIRY"
+            value = "true"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "DELAY_SECONDS"
+            value = "1"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "CFNETWORK_DIAGNOSTICS"
+            value = "3"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "CG_NUMERICS_SHOW_BACKTRACE"
+            value = "1"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Debug"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E24F5AD5253DA051006B2009"
+            BuildableName = "AffordIQ.app"
+            BlueprintName = "AffordIQ"
+            ReferencedContainer = "container:AffordIQ.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

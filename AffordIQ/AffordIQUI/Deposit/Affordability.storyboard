@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Deposit View Controller-->
+        <scene sceneID="KbL-WL-oXA">
+            <objects>
+                <viewController storyboardIdentifier="Deposit" id="cc8-ig-fRB" customClass="DepositViewController" customModule="AffordIQUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8to-Nj-XiX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQf-hG-n9L" userLabel="Header">
+                                <rect key="frame" x="0.0" y="64" width="375" height="214"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdA-8K-mid">
+                                        <rect key="frame" x="20" y="56" width="335" height="206"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ku7-e5-6IV">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="206"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FEc-ll-J6P">
+                                        <rect key="frame" x="111.5" y="78" width="152" height="40.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="savings" translatesAutoresizingMaskIntoConstraints="NO" id="1cv-Yl-gVW">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhi-6j-dNI" customClass="DashboardLargeLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="46" y="0.0" width="106" height="40.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Aaj-Rk-wTx">
+                                        <rect key="frame" x="20" y="124" width="335" height="76"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Buying a Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-ty-Rfu" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="95" y="0.0" width="145" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMQ-rz-R7V" customClass="DashboardLargeLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="136.5" y="26" width="62.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FEc-ll-J6P" firstAttribute="top" secondItem="OdA-8K-mid" secondAttribute="top" constant="22" id="1pw-cs-JWN"/>
+                                    <constraint firstItem="Aaj-Rk-wTx" firstAttribute="centerY" secondItem="GQf-hG-n9L" secondAttribute="centerY" priority="900" constant="55" id="D5e-yc-VYI"/>
+                                    <constraint firstAttribute="trailing" secondItem="OdA-8K-mid" secondAttribute="trailing" constant="20" symbolic="YES" id="Npv-rM-vf6"/>
+                                    <constraint firstItem="OdA-8K-mid" firstAttribute="top" secondItem="GQf-hG-n9L" secondAttribute="top" constant="56" id="Nwf-TR-ahh"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Aaj-Rk-wTx" secondAttribute="bottom" id="apW-6y-aTS"/>
+                                    <constraint firstItem="Aaj-Rk-wTx" firstAttribute="centerX" secondItem="GQf-hG-n9L" secondAttribute="centerX" id="cAZ-Jq-mAU"/>
+                                    <constraint firstItem="FEc-ll-J6P" firstAttribute="centerX" secondItem="GQf-hG-n9L" secondAttribute="centerX" id="dDq-9g-CI8"/>
+                                    <constraint firstItem="OdA-8K-mid" firstAttribute="leading" secondItem="GQf-hG-n9L" secondAttribute="leading" constant="20" symbolic="YES" id="hzm-iY-c7M"/>
+                                    <constraint firstItem="Aaj-Rk-wTx" firstAttribute="width" secondItem="GQf-hG-n9L" secondAttribute="width" constant="-40" id="miw-lT-1du"/>
+                                    <constraint firstItem="Aaj-Rk-wTx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GQf-hG-n9L" secondAttribute="top" constant="32" id="oQG-Hu-CtJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="OdA-8K-mid" secondAttribute="bottom" constant="-48" id="rg2-WK-w2z"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IRv-Ul-Gdr">
+                                <rect key="frame" x="8" y="262" width="359" height="405"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="749" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="287.5" translatesAutoresizingMaskIntoConstraints="NO" id="ftw-8w-Nuq" customClass="TableOverlayView" customModule="AffordIQControls">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="325"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fitToContent" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="tabVisible" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" verticalHuggingPriority="100" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="GxG-Kn-EXE" userLabel="Info">
+                                        <rect key="frame" x="0.0" y="325" width="359" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="38" text="Add money that is not held in these accounts." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4C-68-kD6" customClass="InfoLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="28" y="16" width="303" height="38"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="L4C-68-kD6" firstAttribute="top" secondItem="GxG-Kn-EXE" secondAttribute="top" constant="16" id="7nc-1B-Bse"/>
+                                            <constraint firstAttribute="bottom" secondItem="L4C-68-kD6" secondAttribute="bottom" constant="16" id="VZ2-Jw-LX3"/>
+                                            <constraint firstItem="L4C-68-kD6" firstAttribute="leading" secondItem="GxG-Kn-EXE" secondAttribute="leading" constant="28" id="XKT-II-QC8"/>
+                                            <constraint firstAttribute="trailing" secondItem="L4C-68-kD6" secondAttribute="trailing" constant="28" id="wOJ-Uk-kcL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me8-7p-sCd">
+                                        <rect key="frame" x="0.0" y="325" width="359" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="msg-SC-zet">
+                                                <rect key="frame" x="28" y="16" width="303" height="40"/>
+                                                <subviews>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ws-uf-jve">
+                                                        <rect key="frame" x="0.0" y="0.0" width="556" height="56"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="egc-Qz-YCN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="556" height="64"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YhW-Nq-9Au">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="556" height="0.0"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-NE-dbO" customClass="HeadlineLabelLight" customModule="AffordIQControls">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="484.5" height="0.0"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="£0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehT-B3-1eA" customClass="TotalLabelLight" customModule="AffordIQControls">
+                                                                                <rect key="frame" x="492.5" y="0.0" width="55.5" height="0.0"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fsu-pS-y1p" userLabel="Spacer">
+                                                                                <rect key="frame" x="556" y="0.0" width="0.0" height="0.0"/>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" id="MmL-ia-eRm"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-qS-WzI">
+                                                                        <rect key="frame" x="0.0" y="16" width="556" height="48"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="900" verticalCompressionResistancePriority="1000" text="Gift from parents" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFT-17-oQB" customClass="BodyLabelLight" customModule="AffordIQControls">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="436" height="48"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB0-oY-WnU" customClass="InlineButtonLight" customModule="AffordIQControls">
+                                                                                <rect key="frame" x="444" y="0.0" width="60" height="48"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="Deposit.Edit"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="60" id="ByU-GV-Ng5"/>
+                                                                                </constraints>
+                                                                                <color key="tintColor" systemColor="linkColor"/>
+                                                                                <state key="normal" title="EDIT"/>
+                                                                                <connections>
+                                                                                    <action selector="updateOutsideCapital:" destination="cc8-ig-fRB" eventType="touchUpInside" id="mO6-4E-Fyc"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJU-ag-pmO" customClass="InlineButtonLight" customModule="AffordIQControls">
+                                                                                <rect key="frame" x="512" y="0.0" width="44" height="48"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="44" id="lWm-5q-no3"/>
+                                                                                </constraints>
+                                                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
+                                                                                <state key="normal">
+                                                                                    <imageReference key="image" image="trash" catalog="system" renderingMode="hierarchical-single">
+                                                                                        <hierarchicalColors>
+                                                                                            <color white="0.46204496362582353" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                            <color systemColor="secondaryLabelColor"/>
+                                                                                            <color systemColor="tertiaryLabelColor"/>
+                                                                                        </hierarchicalColors>
+                                                                                    </imageReference>
+                                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                                                </state>
+                                                                                <connections>
+                                                                                    <action selector="deleteOutsideCapital:" destination="cc8-ig-fRB" eventType="touchUpInside" id="Jkb-4v-nwE"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="egc-Qz-YCN" secondAttribute="trailing" id="2Ml-44-LEd"/>
+                                                            <constraint firstAttribute="bottom" secondItem="egc-Qz-YCN" secondAttribute="bottom" constant="-8" id="5Ba-cb-Mye"/>
+                                                            <constraint firstItem="egc-Qz-YCN" firstAttribute="top" secondItem="6ws-uf-jve" secondAttribute="top" id="LWz-An-z64"/>
+                                                            <constraint firstItem="egc-Qz-YCN" firstAttribute="leading" secondItem="6ws-uf-jve" secondAttribute="leading" id="ZdB-um-Ho4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi2-sn-FyH" customClass="PrimaryButtonLight" customModule="AffordIQControls">
+                                                        <rect key="frame" x="0.0" y="0.0" width="556" height="40"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Deposit.AddOutsideCapital"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5VF-j4-1nF"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Add Money"/>
+                                                        <connections>
+                                                            <action selector="updateOutsideCapital:" destination="cc8-ig-fRB" eventType="touchUpInside" id="uVd-am-3aH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TG-Sr-5o2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="556" height="48"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Awz-ME-AoX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="556" height="48"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you currently don't have any money for buying a house tap next or skip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOm-Ao-Do5" customClass="InfoLabel" customModule="AffordIQControls">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="556" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVA-SZ-XGp" customClass="SecondaryButtonLight" customModule="AffordIQControls">
+                                                                        <rect key="frame" x="0.0" y="8" width="556" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="fQE-ND-hj5"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" red="0.058823529409999999" green="0.027450980390000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Skip"/>
+                                                                        <connections>
+                                                                            <action selector="skipButtonHandle:" destination="cc8-ig-fRB" eventType="touchUpInside" id="Wfx-dv-tMx"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Awz-ME-AoX" firstAttribute="top" secondItem="0TG-Sr-5o2" secondAttribute="top" id="Qcv-hb-20D"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Awz-ME-AoX" secondAttribute="bottom" id="RsO-Du-VdQ"/>
+                                                            <constraint firstItem="Awz-ME-AoX" firstAttribute="leading" secondItem="0TG-Sr-5o2" secondAttribute="leading" id="VW4-4W-UOT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Awz-ME-AoX" secondAttribute="trailing" id="ueb-9D-z7d"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="msg-SC-zet" secondAttribute="trailing" constant="28" id="7PF-t5-lJe"/>
+                                            <constraint firstItem="msg-SC-zet" firstAttribute="top" secondItem="me8-7p-sCd" secondAttribute="top" constant="16" id="FkX-GY-z9J"/>
+                                            <constraint firstItem="msg-SC-zet" firstAttribute="leading" secondItem="me8-7p-sCd" secondAttribute="leading" constant="28" id="hes-6L-nUN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8bA-aa-xso"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Deposit"/>
+                        <constraints>
+                            <constraint firstItem="ftw-8w-Nuq" firstAttribute="top" secondItem="qMQ-rz-R7V" secondAttribute="top" constant="48" id="AHa-Xe-kvr"/>
+                            <constraint firstItem="GQf-hG-n9L" firstAttribute="top" secondItem="8bA-aa-xso" secondAttribute="top" id="EkB-y7-MZR"/>
+                            <constraint firstItem="IRv-Ul-Gdr" firstAttribute="top" secondItem="GQf-hG-n9L" secondAttribute="bottom" constant="-16" id="Fkp-3h-Rj0"/>
+                            <constraint firstItem="8bA-aa-xso" firstAttribute="trailing" secondItem="GQf-hG-n9L" secondAttribute="trailing" id="TTu-lX-aeL"/>
+                            <constraint firstItem="IRv-Ul-Gdr" firstAttribute="leading" secondItem="8bA-aa-xso" secondAttribute="leading" constant="8" id="c9C-s8-q4W"/>
+                            <constraint firstItem="GQf-hG-n9L" firstAttribute="leading" secondItem="8bA-aa-xso" secondAttribute="leading" id="dwa-32-NUT"/>
+                            <constraint firstItem="IRv-Ul-Gdr" firstAttribute="trailing" secondItem="8bA-aa-xso" secondAttribute="trailing" constant="-8" id="eOp-gF-pPb"/>
+                            <constraint firstItem="IRv-Ul-Gdr" firstAttribute="bottom" secondItem="8to-Nj-XiX" secondAttribute="bottom" id="teE-Wu-weB"/>
+                            <constraint firstItem="8bA-aa-xso" firstAttribute="bottom" secondItem="msg-SC-zet" secondAttribute="bottom" constant="24" id="xg0-IB-bI1"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addExternalCapital" destination="Vi2-sn-FyH" id="8RF-0E-ewr"/>
+                        <outlet property="capitalBackground" destination="me8-7p-sCd" id="m0t-ll-n35"/>
+                        <outlet property="currentDeposit" destination="qMQ-rz-R7V" id="8d2-iI-pzq"/>
+                        <outlet property="editExternalCapital" destination="6ws-uf-jve" id="77S-La-Q3y"/>
+                        <outlet property="externalCapital" destination="ehT-B3-1eA" id="Oy9-3R-4Je"/>
+                        <outlet property="externalCapitalDescription" destination="fFT-17-oQB" id="pdo-cM-ENQ"/>
+                        <outlet property="infoContainer" destination="GxG-Kn-EXE" id="0ju-KQ-hoM"/>
+                        <outlet property="overlay" destination="ftw-8w-Nuq" id="L1V-3u-EVP"/>
+                        <outlet property="skipView" destination="0TG-Sr-5o2" id="6To-bn-dau"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3r-EH-6IB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="35.532233883058474"/>
+        </scene>
+        <!--Outside Capital-->
+        <scene sceneID="apR-0a-ScL">
+            <objects>
+                <viewController storyboardIdentifier="OutsideCapital" title="Outside Capital" id="6gn-bf-2kO" customClass="ExternalCapitalViewController" customModule="AffordIQUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cse-Qt-rG4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOt-Zy-DM6">
+                                <rect key="frame" x="20" y="120" width="335" height="103.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ns3-QP-yGQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="103.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="J1u-kx-6xo">
+                                            <rect key="frame" x="91.5" y="22" width="152" height="40.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savings" translatesAutoresizingMaskIntoConstraints="NO" id="srh-Kp-d5L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="40.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLf-YD-vxC" customClass="DashboardLargeLabel" customModule="AffordIQControls">
+                                                    <rect key="frame" x="46" y="0.0" width="106" height="40.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="J1u-kx-6xo" firstAttribute="centerX" secondItem="ns3-QP-yGQ" secondAttribute="centerX" id="JYv-CI-zsv"/>
+                                        <constraint firstItem="J1u-kx-6xo" firstAttribute="top" secondItem="ns3-QP-yGQ" secondAttribute="top" constant="22" id="cZG-9u-Cl8"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yJ-U2-KEZ" customClass="RoundedTopView" customModule="AffordIQControls">
+                                <rect key="frame" x="8" y="198" width="359" height="420"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cj8-l4-tbn">
+                                <rect key="frame" x="20" y="218" width="335" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QYf-pL-ZNw">
+                                        <rect key="frame" x="20" y="0.0" width="295" height="403"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajx-nc-9af" customClass="FieldLabelLight" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1mM-ra-egA">
+                                                <rect key="frame" x="0.0" y="40.5" width="295" height="330.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tr6-yo-JO2" customClass="FieldLabelLight" customModule="AffordIQControls">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="24.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKp-gM-ViU" customClass="TextFieldLight" customModule="AffordIQControls">
+                                                        <rect key="frame" x="0.0" y="32.5" width="295" height="38"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="OutsideCapital.Amount"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-K4-TBm" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                        <rect key="frame" x="0.0" y="78.5" width="295" height="22"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description (Optional)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-tu-Pzt" customClass="FieldLabelLight" customModule="AffordIQControls">
+                                                        <rect key="frame" x="0.0" y="108.5" width="295" height="24.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aJn-sl-PLM">
+                                                        <rect key="frame" x="0.0" y="141" width="295" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="Yum-RV-rdX"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="6gn-bf-2kO" id="SqX-XN-KcU"/>
+                                                        </connections>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60d-hO-NE0">
+                                                        <rect key="frame" x="0.0" y="229" width="295" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-qb-gfC" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                        <rect key="frame" x="0.0" y="256.5" width="295" height="22"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fEX-Be-pOX">
+                                                        <rect key="frame" x="0.0" y="286.5" width="295" height="44"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORi-1m-9Og" customClass="SecondaryButtonLight" customModule="AffordIQControls">
+                                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="OutsideCapital.Cancel"/>
+                                                                <state key="normal" title="Cancel"/>
+                                                                <connections>
+                                                                    <action selector="cancel:" destination="6gn-bf-2kO" eventType="touchUpInside" id="QkA-dU-ta4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-LM-a4X" customClass="PrimaryButtonLight" customModule="AffordIQControls">
+                                                                <rect key="frame" x="152.5" y="0.0" width="142.5" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="OutsideCapital.Apply"/>
+                                                                <state key="normal" title="Add"/>
+                                                                <connections>
+                                                                    <action selector="submit:" destination="6gn-bf-2kO" eventType="touchUpInside" id="vI7-0b-Wi9"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyl-9a-g2n">
+                                                <rect key="frame" x="0.0" y="387" width="295" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="VqA-fD-Gk2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QYf-pL-ZNw" firstAttribute="leading" secondItem="cj8-l4-tbn" secondAttribute="leading" constant="20" id="5dl-NY-VlH"/>
+                                    <constraint firstItem="QYf-pL-ZNw" firstAttribute="top" secondItem="cj8-l4-tbn" secondAttribute="top" id="B1B-dx-fMc"/>
+                                    <constraint firstAttribute="trailing" secondItem="QYf-pL-ZNw" secondAttribute="trailing" constant="20" id="aAh-FX-Uhj"/>
+                                    <constraint firstAttribute="bottom" secondItem="QYf-pL-ZNw" secondAttribute="bottom" id="kwe-Nh-r5x"/>
+                                    <constraint firstAttribute="height" priority="900" constant="400" id="m3q-5D-emz"/>
+                                    <constraint firstAttribute="height" secondItem="QYf-pL-ZNw" secondAttribute="height" priority="1" constant="20" id="ve7-G2-eKG"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VlE-jp-CGV"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5Le-Br-sAF"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SXN-En-tuz"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="OutsideCapital"/>
+                        <constraints>
+                            <constraint firstItem="0yJ-U2-KEZ" firstAttribute="top" secondItem="cj8-l4-tbn" secondAttribute="top" constant="-20" id="1Vv-I6-pD4"/>
+                            <constraint firstItem="SXN-En-tuz" firstAttribute="trailing" secondItem="0yJ-U2-KEZ" secondAttribute="trailing" constant="8" id="5Qr-yf-h6G"/>
+                            <constraint firstItem="SOt-Zy-DM6" firstAttribute="leading" secondItem="SXN-En-tuz" secondAttribute="leading" constant="20" id="BXf-Z8-n3U"/>
+                            <constraint firstItem="SXN-En-tuz" firstAttribute="trailing" secondItem="SOt-Zy-DM6" secondAttribute="trailing" constant="20" id="IYV-Pf-HvD"/>
+                            <constraint firstItem="SXN-En-tuz" firstAttribute="trailing" secondItem="cj8-l4-tbn" secondAttribute="trailing" constant="20" id="KXf-R2-18e"/>
+                            <constraint firstItem="0yJ-U2-KEZ" firstAttribute="top" secondItem="SOt-Zy-DM6" secondAttribute="bottom" constant="-25.5" id="OGR-iG-xBe"/>
+                            <constraint firstAttribute="bottom" secondItem="0yJ-U2-KEZ" secondAttribute="bottom" id="Px1-lj-E7x"/>
+                            <constraint firstItem="0yJ-U2-KEZ" firstAttribute="leading" secondItem="SXN-En-tuz" secondAttribute="leading" constant="8" id="UnY-q4-lQb"/>
+                            <constraint firstItem="QYf-pL-ZNw" firstAttribute="width" secondItem="Cse-Qt-rG4" secondAttribute="width" constant="-80" id="Zfa-ta-FM7"/>
+                            <constraint firstItem="cj8-l4-tbn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SXN-En-tuz" secondAttribute="top" constant="80" id="eco-T7-frM"/>
+                            <constraint firstItem="cj8-l4-tbn" firstAttribute="top" secondItem="SXN-En-tuz" secondAttribute="top" priority="1" constant="160" id="fKE-eT-kZl"/>
+                            <constraint firstItem="cj8-l4-tbn" firstAttribute="leading" secondItem="SXN-En-tuz" secondAttribute="leading" constant="20" id="ivr-vZ-pal"/>
+                            <constraint firstItem="SOt-Zy-DM6" firstAttribute="top" secondItem="SXN-En-tuz" secondAttribute="top" constant="56" id="kMO-Qa-Py5"/>
+                            <constraint firstItem="SXN-En-tuz" firstAttribute="bottom" secondItem="cj8-l4-tbn" secondAttribute="bottom" priority="750" id="uFP-84-4zV" userLabel="Scroll View Bottom"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <connections>
+                        <outlet property="bottomConstraintManager" destination="fku-Y6-RJN" id="5BB-Zg-ThZ"/>
+                        <outlet property="cancelButton" destination="ORi-1m-9Og" id="Gyl-f4-Ed5"/>
+                        <outlet property="capitalAmount" destination="tKp-gM-ViU" id="7rV-bG-hMg"/>
+                        <outlet property="capitalAmountError" destination="zhS-K4-TBm" id="waU-CY-sPl"/>
+                        <outlet property="capitalDescription" destination="aJn-sl-PLM" id="Hiw-H9-YaE"/>
+                        <outlet property="capitalDescriptionError" destination="EUD-qb-gfC" id="pKS-ol-3lT"/>
+                        <outlet property="content" destination="QYf-pL-ZNw" id="ftS-9S-Bga"/>
+                        <outlet property="counterLabel" destination="60d-hO-NE0" id="CKQ-v8-eMc"/>
+                        <outlet property="editingControls" destination="fEX-Be-pOX" id="daZ-Ba-kw3"/>
+                        <outlet property="fullHeight" destination="fKE-eT-kZl" id="Pll-KB-PeO"/>
+                        <outlet property="submitButton" destination="uzJ-LM-a4X" id="VZv-QJ-SkO"/>
+                        <outlet property="targetHeight" destination="m3q-5D-emz" id="sYq-t4-UXJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25u-WV-uUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="fku-Y6-RJN" customClass="BottomConstraintManager" customModule="AffordIQControls">
+                    <connections>
+                        <outlet property="bottomConstraint" destination="uFP-84-4zV" id="JB0-fs-nkU"/>
+                        <outlet property="layoutView" destination="Cse-Qt-rG4" id="MV5-Bh-p7p"/>
+                        <outlet property="viewController" destination="6gn-bf-2kO" id="709-bn-fUs"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1741.5999999999999" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Ajx-nc-9af">
+            <size key="intrinsicContentSize" width="104" height="24.5"/>
+        </designable>
+        <designable name="DOm-Ao-Do5">
+            <size key="intrinsicContentSize" width="556" height="22"/>
+        </designable>
+        <designable name="EUD-qb-gfC">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="L4C-68-kD6">
+            <size key="intrinsicContentSize" width="335" height="38"/>
+        </designable>
+        <designable name="LS9-NE-dbO">
+            <size key="intrinsicContentSize" width="120" height="24.5"/>
+        </designable>
+        <designable name="ORi-1m-9Og">
+            <size key="intrinsicContentSize" width="335" height="44"/>
+        </designable>
+        <designable name="Tr6-yo-JO2">
+            <size key="intrinsicContentSize" width="73" height="24.5"/>
+        </designable>
+        <designable name="Vi2-sn-FyH">
+            <size key="intrinsicContentSize" width="128" height="48"/>
+        </designable>
+        <designable name="ehT-B3-1eA">
+            <size key="intrinsicContentSize" width="55.5" height="24.5"/>
+        </designable>
+        <designable name="fFT-17-oQB">
+            <size key="intrinsicContentSize" width="148" height="24.5"/>
+        </designable>
+        <designable name="ftw-8w-Nuq">
+            <size key="intrinsicContentSize" width="375" height="287.5"/>
+        </designable>
+        <designable name="gB0-oY-WnU">
+            <size key="intrinsicContentSize" width="68" height="48"/>
+        </designable>
+        <designable name="jLf-YD-vxC">
+            <size key="intrinsicContentSize" width="106" height="40.5"/>
+        </designable>
+        <designable name="kP5-ty-Rfu">
+            <size key="intrinsicContentSize" width="145" height="22"/>
+        </designable>
+        <designable name="kVA-SZ-XGp">
+            <size key="intrinsicContentSize" width="81" height="48"/>
+        </designable>
+        <designable name="lsl-tu-Pzt">
+            <size key="intrinsicContentSize" width="201.5" height="24.5"/>
+        </designable>
+        <designable name="oJU-ag-pmO">
+            <size key="intrinsicContentSize" width="48.5" height="48"/>
+        </designable>
+        <designable name="qMQ-rz-R7V"/>
+        <designable name="tKp-gM-ViU">
+            <size key="intrinsicContentSize" width="36" height="38"/>
+        </designable>
+        <designable name="uzJ-LM-a4X">
+            <size key="intrinsicContentSize" width="335" height="44"/>
+        </designable>
+        <designable name="zhS-K4-TBm">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="zhi-6j-dNI">
+            <size key="intrinsicContentSize" width="106" height="40.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="savings" width="30" height="30"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

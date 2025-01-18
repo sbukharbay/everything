@@ -1,0 +1,6 @@
+framework module Pods_AffordIQAuth0 {
+  umbrella header "Pods-AffordIQAuth0-umbrella.h"
+
+  export *
+  module * { export * }
+}

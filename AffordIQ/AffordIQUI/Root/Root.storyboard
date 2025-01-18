@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Keg-nV-lM4">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="permanent-marker-regular.ttf">
+            <string>PermanentMarker-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Root-->
+        <scene sceneID="FXR-xz-E8I">
+            <objects>
+                <viewController title="Root" id="Keg-nV-lM4" customClass="RootViewController" customModule="AffordIQUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHZ-b1-n4q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_release" translatesAutoresizingMaskIntoConstraints="NO" id="UaX-jb-dtd">
+                                <rect key="frame" x="77.5" y="143" width="220" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UaX-jb-dtd" secondAttribute="height" multiplier="1:1" id="Aar-Zo-PoV"/>
+                                    <constraint firstAttribute="width" constant="220" id="qCz-P8-SVY"/>
+                                    <constraint firstAttribute="width" secondItem="UaX-jb-dtd" secondAttribute="height" multiplier="1:1" id="vIt-5J-Z4a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OWN IT " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQo-8n-81a">
+                                <rect key="frame" x="96.5" y="379" width="182.5" height="56"/>
+                                <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="48"/>
+                                <color key="textColor" red="0.57601308819999997" green="0.92911583190000002" blue="0.93726176019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bCu-Ku-Ojs">
+                                <rect key="frame" x="16" y="547" width="343" height="104"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkN-Lb-E27" customClass="PrimaryButtonDark" customModule="AffordIQControls">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Login.BeginJourney"/>
+                                        <state key="normal" title="Begin Journey"/>
+                                        <connections>
+                                            <action selector="beginJourney:" destination="Keg-nV-lM4" eventType="touchUpInside" id="LT6-OK-k4l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1E-Mw-YBo" customClass="SecondaryButtonDark" customModule="AffordIQControls">
+                                        <rect key="frame" x="0.0" y="56" width="343" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Login.SignIn"/>
+                                        <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="signIn:" destination="Keg-nV-lM4" eventType="touchUpInside" id="dYd-Z8-PDx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="ch0-rB-u3q"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hLI-ms-E6h"/>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.027450980390000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bCu-Ku-Ojs" firstAttribute="leading" secondItem="hLI-ms-E6h" secondAttribute="leading" constant="16" id="GFX-eN-YAw"/>
+                            <constraint firstItem="UaX-jb-dtd" firstAttribute="centerY" secondItem="ZHZ-b1-n4q" secondAttribute="centerY" constant="-80.5" id="NIg-yh-XId"/>
+                            <constraint firstItem="iQo-8n-81a" firstAttribute="centerX" secondItem="hLI-ms-E6h" secondAttribute="centerX" id="RwP-6E-w3c"/>
+                            <constraint firstItem="UaX-jb-dtd" firstAttribute="centerX" secondItem="hLI-ms-E6h" secondAttribute="centerX" id="Uls-sj-d7G"/>
+                            <constraint firstItem="hLI-ms-E6h" firstAttribute="trailing" secondItem="bCu-Ku-Ojs" secondAttribute="trailing" constant="16" id="eYe-ib-gxf"/>
+                            <constraint firstItem="iQo-8n-81a" firstAttribute="top" secondItem="UaX-jb-dtd" secondAttribute="bottom" constant="16" id="wW3-C7-5VN"/>
+                            <constraint firstItem="hLI-ms-E6h" firstAttribute="bottom" secondItem="bCu-Ku-Ojs" secondAttribute="bottom" constant="16" id="x3f-yf-s0n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wV5-uh-Q7A">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="1Ac-zq-m1h"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomStackView" destination="bCu-Ku-Ojs" id="HgP-yB-MFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rb1-0g-dAo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413.60000000000002" y="41.829085457271368"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="KkN-Lb-E27">
+            <size key="intrinsicContentSize" width="115" height="34"/>
+        </designable>
+        <designable name="m1E-Mw-YBo">
+            <size key="intrinsicContentSize" width="55" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="logo_release" width="1700" height="2027"/>
+    </resources>
+</document>

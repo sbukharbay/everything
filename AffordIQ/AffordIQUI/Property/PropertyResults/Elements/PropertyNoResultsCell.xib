@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertyNoResultsCell" rowHeight="226" id="XUC-g2-x6k" customClass="PropertyNoResultsCell" customModule="AffordIQUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XUC-g2-x6k" id="Tef-gR-tjp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXa-Py-a7Q">
+                        <rect key="frame" x="20" y="8" width="280" height="210"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1dh-MW-uKw">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="210"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <blurEffect style="systemUltraThinMaterialDark"/>
+                    </visualEffectView>
+                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="900" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-Vj-Ffm">
+                        <rect key="frame" x="32" y="16" width="256" height="194"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="900" verticalCompressionResistancePriority="1000" text="There are no properties in this area matching your current search filter. Please try a new search." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-09-V4c" customClass="HeadlineLabelDark" customModule="AffordIQControls">
+                                <rect key="frame" x="0.0" y="0.0" width="256" height="194"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MXa-Py-a7Q" firstAttribute="centerX" secondItem="IQy-Vj-Ffm" secondAttribute="centerX" id="0Iz-SB-mQ0"/>
+                    <constraint firstAttribute="trailing" secondItem="IQy-Vj-Ffm" secondAttribute="trailing" constant="32" id="0kT-e4-hTv"/>
+                    <constraint firstItem="MXa-Py-a7Q" firstAttribute="centerY" secondItem="IQy-Vj-Ffm" secondAttribute="centerY" id="Lp2-ge-dPm"/>
+                    <constraint firstItem="MXa-Py-a7Q" firstAttribute="width" secondItem="IQy-Vj-Ffm" secondAttribute="width" constant="24" id="R1M-FE-2lr"/>
+                    <constraint firstItem="MXa-Py-a7Q" firstAttribute="height" secondItem="IQy-Vj-Ffm" secondAttribute="height" constant="16" id="Zld-yA-wp6"/>
+                    <constraint firstItem="IQy-Vj-Ffm" firstAttribute="top" secondItem="Tef-gR-tjp" secondAttribute="top" constant="16" id="iMB-jv-MwR"/>
+                    <constraint firstAttribute="bottom" secondItem="IQy-Vj-Ffm" secondAttribute="bottom" constant="16" id="pa6-Xn-iHw"/>
+                    <constraint firstItem="IQy-Vj-Ffm" firstAttribute="leading" secondItem="Tef-gR-tjp" secondAttribute="leading" constant="32" id="rkr-rE-o2e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="hvM-vq-JJz"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="PropertyNoResults"/>
+            <connections>
+                <outlet property="blur" destination="MXa-Py-a7Q" id="neE-la-cuc"/>
+            </connections>
+            <point key="canvasLocation" x="-10.144927536231885" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Akz-09-V4c">
+            <size key="intrinsicContentSize" width="718" height="20.5"/>
+        </designable>
+    </designables>
+</document>

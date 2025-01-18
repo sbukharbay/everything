@@ -1,0 +1,114 @@
+included:
+  - AffordIQ
+excluded:
+  - Pods
+  - fastlane
+analyzer_rules:
+  - unused_declaration
+  - unused_import
+opt_in_rules:
+  - array_init
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - discouraged_object_literal
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - enum_case_associated_values_count
+  - explicit_init
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  - file_header
+  - first_where
+  - flatmap_over_map_reduce
+  - identical_operands
+  - joined_default_parameter
+  - legacy_random
+  - let_var_whitespace
+  - last_where
+  - legacy_multiple
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - modifier_order
+  - nimble_operator
+  - nslocalizedstring_key
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - pattern_matching_keywords
+  - prefer_self_type_over_type_of_self
+  - prohibited_super_call
+  - quick_discouraged_call
+  - quick_discouraged_focused_test
+  - quick_discouraged_pending_test
+  - redundant_nil_coalescing
+  - single_test_class
+  - sorted_first_last
+  - static_operator
+  - toggle_bool
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  - unowned_variable_capture
+  - vertical_parameter_alignment_on_call
+  - xct_specific_matcher
+  - yoda_condition
+
+line_length:
+  warning: 250
+  error: 400
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+  ignores_interpolated_strings: true
+
+identifier_name:
+  excluded:
+    - id
+    - ok
+    - vm
+    - vc
+    - i
+    - j
+    - pc
+    - dp
+    
+cyclomatic_complexity:
+  ignores_case_statements: true
+  warning: 16
+  error: 20
+
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  .*?\.swift
+                    \/\/  .*?
+                    \/\/
+                    \/\/  Created by .*? on .*?\.
+                    \/\/  Copyright © \d{4} BlackArrow Financial Solutions Limited\. All rights reserved\.
+                    \/\/
+
+disabled_rules:
+  - valid_ibinspectable
+  - trailing_whitespace
+  - nesting
+  - todo
+  - empty_xctest_method
+  - type_name
+  - type_body_length
+  - function_body_length
+  - function_parameter_count
+  - notification_center_detachment
+  - legacy_constructor
+  - file_length
+  - number_separator
+  - redundant_type_annotation
+  - untyped_error_in_catch
+  - large_tuple
+  - nslocalizedstring_key

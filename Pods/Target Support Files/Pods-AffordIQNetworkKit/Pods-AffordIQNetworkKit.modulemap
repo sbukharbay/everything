@@ -1,0 +1,6 @@
+framework module Pods_AffordIQNetworkKit {
+  umbrella header "Pods-AffordIQNetworkKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

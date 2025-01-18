@@ -1,0 +1,6 @@
+framework module Pods_AffordIQFoundation {
+  umbrella header "Pods-AffordIQFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

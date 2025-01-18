@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ulx-b5-3fI">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accounts View Controller-->
+        <scene sceneID="ybx-5e-FOL">
+            <objects>
+                <viewController id="Ulx-b5-3fI" customClass="AccountsViewController" customModule="AffordIQUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hd0-Dd-wnf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XW7-uS-6Pq" userLabel="Background" customClass="BackgroundImageView" customModule="AffordIQControls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LIp-ny-Wjq">
+                                <rect key="frame" x="0.0" y="76" width="375" height="549"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-US-q7v">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YAD-m1-udL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.027450980390000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j1N-uZ-xZs">
+                                <rect key="frame" x="32" y="625" width="311" height="34"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAR-K3-Txw" customClass="WarningButtonDark" customModule="AffordIQControls">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Accounts.RenewConsent"/>
+                                        <state key="normal" title="Renew Consent"/>
+                                        <connections>
+                                            <action selector="renewConsent:" destination="Ulx-b5-3fI" eventType="touchUpInside" id="c8v-38-CUr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGB-Iq-Ehy" customClass="PrimaryButtonDark" customModule="AffordIQControls">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Accounts.AddMoreAccounts"/>
+                                        <state key="normal" title="Add More Accounts"/>
+                                        <connections>
+                                            <action selector="addMoreAccounts:" destination="Ulx-b5-3fI" eventType="touchUpInside" id="Nv8-2m-AYN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cFA-An-Ce9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Accounts"/>
+                        <constraints>
+                            <constraint firstItem="UTS-US-q7v" firstAttribute="leading" secondItem="cFA-An-Ce9" secondAttribute="leading" id="8ZT-D7-oKI"/>
+                            <constraint firstItem="cFA-An-Ce9" firstAttribute="trailing" secondItem="XW7-uS-6Pq" secondAttribute="trailing" id="9kp-jZ-zgb"/>
+                            <constraint firstItem="UTS-US-q7v" firstAttribute="top" secondItem="j1N-uZ-xZs" secondAttribute="top" constant="-8" id="Fbi-zA-fL8"/>
+                            <constraint firstItem="LIp-ny-Wjq" firstAttribute="top" secondItem="cFA-An-Ce9" secondAttribute="top" constant="56" id="MSZ-hV-Crf"/>
+                            <constraint firstItem="UTS-US-q7v" firstAttribute="trailing" secondItem="cFA-An-Ce9" secondAttribute="trailing" id="MjR-rU-wBd"/>
+                            <constraint firstItem="cFA-An-Ce9" firstAttribute="trailing" secondItem="LIp-ny-Wjq" secondAttribute="trailing" id="SUC-2w-Xry"/>
+                            <constraint firstAttribute="top" secondItem="XW7-uS-6Pq" secondAttribute="top" id="Tce-W1-Icg"/>
+                            <constraint firstItem="j1N-uZ-xZs" firstAttribute="top" secondItem="LIp-ny-Wjq" secondAttribute="bottom" id="Xsu-tV-RBm"/>
+                            <constraint firstItem="XW7-uS-6Pq" firstAttribute="leading" secondItem="cFA-An-Ce9" secondAttribute="leading" id="YYH-ue-4Ur"/>
+                            <constraint firstItem="XW7-uS-6Pq" firstAttribute="bottom" secondItem="Hd0-Dd-wnf" secondAttribute="bottom" id="bgm-GI-ey0"/>
+                            <constraint firstItem="j1N-uZ-xZs" firstAttribute="leading" secondItem="cFA-An-Ce9" secondAttribute="leading" constant="32" id="dbw-Gp-N5c"/>
+                            <constraint firstItem="cFA-An-Ce9" firstAttribute="leading" secondItem="LIp-ny-Wjq" secondAttribute="leading" id="flC-DU-mav"/>
+                            <constraint firstItem="UTS-US-q7v" firstAttribute="bottom" secondItem="Hd0-Dd-wnf" secondAttribute="bottom" id="jEd-f9-rMx"/>
+                            <constraint firstItem="cFA-An-Ce9" firstAttribute="bottom" secondItem="j1N-uZ-xZs" secondAttribute="bottom" constant="8" id="nss-xm-H1Q"/>
+                            <constraint firstItem="cFA-An-Ce9" firstAttribute="trailing" secondItem="j1N-uZ-xZs" secondAttribute="trailing" constant="32" id="vRK-B7-ofd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accounts" destination="LIp-ny-Wjq" id="tae-wd-rMO"/>
+                        <outlet property="reconsentButton" destination="NAR-K3-Txw" id="Xmj-W2-EcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tj2-fh-QCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="4cL-eS-8Kj" customClass="ContentSizeMonitor" customModule="AffordIQControls">
+                    <connections>
+                        <outlet property="delegate" destination="Ulx-b5-3fI" id="Kxx-vz-ACi"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="184.85757121439281"/>
+        </scene>
+        <!--Link Accounts View Controller-->
+        <scene sceneID="C7b-1O-3SO">
+            <objects>
+                <viewController storyboardIdentifier="LinkAccounts" hidesBottomBarWhenPushed="YES" id="eJb-ya-Mo5" customClass="LinkAccountsViewController" customModule="AffordIQUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCP-Ec-SjC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbe-fz-Zvk" userLabel="Background" customClass="BackgroundImageView" customModule="AffordIQControls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5xh-Za-ViP">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="adA-uM-U18"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="LinkAccounts"/>
+                        <constraints>
+                            <constraint firstItem="zbe-fz-Zvk" firstAttribute="leading" secondItem="adA-uM-U18" secondAttribute="leading" id="2Sn-aM-idt"/>
+                            <constraint firstItem="adA-uM-U18" firstAttribute="trailing" secondItem="zbe-fz-Zvk" secondAttribute="trailing" id="4DU-LU-fWn"/>
+                            <constraint firstItem="zbe-fz-Zvk" firstAttribute="bottom" secondItem="mCP-Ec-SjC" secondAttribute="bottom" id="5Dj-eU-4sY"/>
+                            <constraint firstItem="adA-uM-U18" firstAttribute="bottom" secondItem="5xh-Za-ViP" secondAttribute="bottom" id="PMp-2E-fu1"/>
+                            <constraint firstItem="adA-uM-U18" firstAttribute="trailing" secondItem="5xh-Za-ViP" secondAttribute="trailing" id="ZdC-Zw-jNv"/>
+                            <constraint firstItem="5xh-Za-ViP" firstAttribute="top" secondItem="adA-uM-U18" secondAttribute="top" constant="56" id="dkw-wp-eaB"/>
+                            <constraint firstAttribute="top" secondItem="zbe-fz-Zvk" secondAttribute="top" id="ufR-4B-529"/>
+                            <constraint firstItem="5xh-Za-ViP" firstAttribute="leading" secondItem="adA-uM-U18" secondAttribute="leading" id="yYa-rE-rUX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accounts" destination="5xh-Za-ViP" id="Vqg-Hd-zwS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeI-pU-Ky4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="191.1544227886057"/>
+        </scene>
+        <!--Select a Provider-->
+        <scene sceneID="quw-Vi-NIQ">
+            <objects>
+                <viewController storyboardIdentifier="SelectProvider" hidesBottomBarWhenPushed="YES" id="gUu-2f-TAx" customClass="SelectProviderViewController" customModule="AffordIQUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkM-9l-y8t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uPi-Zg-bM6" userLabel="Background" customClass="BackgroundImageView" customModule="AffordIQControls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vE4-uB-TkX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h9E-UZ-qaw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
+                            </visualEffectView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UqX-Cz-g9Y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SzX-tm-ZQ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="SelectProvider"/>
+                        <constraints>
+                            <constraint firstItem="uPi-Zg-bM6" firstAttribute="leading" secondItem="SzX-tm-ZQ7" secondAttribute="leading" id="3gx-sv-zRm"/>
+                            <constraint firstItem="vE4-uB-TkX" firstAttribute="width" secondItem="uPi-Zg-bM6" secondAttribute="width" id="8To-0g-PbH"/>
+                            <constraint firstItem="UqX-Cz-g9Y" firstAttribute="trailing" secondItem="SzX-tm-ZQ7" secondAttribute="trailing" id="Bt7-ub-A9i"/>
+                            <constraint firstItem="SzX-tm-ZQ7" firstAttribute="trailing" secondItem="uPi-Zg-bM6" secondAttribute="trailing" id="LHS-ev-zRj"/>
+                            <constraint firstItem="vE4-uB-TkX" firstAttribute="centerY" secondItem="uPi-Zg-bM6" secondAttribute="centerY" id="LTc-79-aRr"/>
+                            <constraint firstItem="UqX-Cz-g9Y" firstAttribute="leading" secondItem="SzX-tm-ZQ7" secondAttribute="leading" id="QYX-KY-AWq"/>
+                            <constraint firstItem="vE4-uB-TkX" firstAttribute="height" secondItem="uPi-Zg-bM6" secondAttribute="height" id="d8E-0w-OV3"/>
+                            <constraint firstItem="uPi-Zg-bM6" firstAttribute="bottom" secondItem="gkM-9l-y8t" secondAttribute="bottom" id="e64-Eb-ziY"/>
+                            <constraint firstAttribute="top" secondItem="uPi-Zg-bM6" secondAttribute="top" id="jfQ-0p-di0"/>
+                            <constraint firstItem="SzX-tm-ZQ7" firstAttribute="top" secondItem="UqX-Cz-g9Y" secondAttribute="top" id="nIQ-Ps-t1K"/>
+                            <constraint firstItem="SzX-tm-ZQ7" firstAttribute="bottom" secondItem="UqX-Cz-g9Y" secondAttribute="bottom" id="ogd-TU-5YX"/>
+                            <constraint firstItem="vE4-uB-TkX" firstAttribute="centerX" secondItem="uPi-Zg-bM6" secondAttribute="centerX" id="y9k-Qm-yiy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select a Provider" id="seJ-wj-O8d">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fPL-F1-fan"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="providers" destination="UqX-Cz-g9Y" id="Tr4-B0-APc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwW-xM-cAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="-506"/>
+        </scene>
+        <!--Accounts Onboarding-->
+        <scene sceneID="aws-yJ-Ewr">
+            <objects>
+                <viewController storyboardIdentifier="AccountsOnboarding" title="Accounts Onboarding" id="YFA-X6-rC5" customClass="AccountsOnboardingViewController" customModule="AffordIQUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Qi-U8-oy2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsl-Ex-VLV" userLabel="Background" customClass="BackgroundImageView" customModule="AffordIQControls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-Qc-w9C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="494" translatesAutoresizingMaskIntoConstraints="NO" id="nb3-eS-SYP" customClass="InfoOverlayView" customModule="AffordIQControls">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="494"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Link Bank Account Data"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="body">
+                                                <string key="value">For BlackArrow to provide the financial insights you need, including your Mortgage Affordability, please link all bank accounts and credit cards. You will not be giving permission for payments or money transfers to be made via the BlackArrow app.</string>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="link_accounts_graphic"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="actionTitle" value="Link Accounts"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="YFA-X6-rC5" id="Mwz-eL-R47"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nb3-eS-SYP" firstAttribute="leading" secondItem="Sam-Qc-w9C" secondAttribute="leading" constant="16" id="amd-Ao-Z1B"/>
+                                    <constraint firstItem="nb3-eS-SYP" firstAttribute="top" secondItem="Sam-Qc-w9C" secondAttribute="top" id="eBU-8c-cER"/>
+                                    <constraint firstAttribute="trailing" secondItem="nb3-eS-SYP" secondAttribute="trailing" constant="16" id="foY-G7-AW8"/>
+                                    <constraint firstAttribute="bottom" secondItem="nb3-eS-SYP" secondAttribute="bottom" priority="999" constant="16" id="pKS-P0-ioq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="EXc-4Y-IBN"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="QhA-MO-nAR"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AjN-go-XPL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="AccountsOnboarding"/>
+                        <constraints>
+                            <constraint firstItem="qsl-Ex-VLV" firstAttribute="bottom" secondItem="5Qi-U8-oy2" secondAttribute="bottom" id="0AK-pH-c0e"/>
+                            <constraint firstAttribute="trailing" secondItem="qsl-Ex-VLV" secondAttribute="trailing" id="7iM-YH-swK"/>
+                            <constraint firstItem="AjN-go-XPL" firstAttribute="bottom" secondItem="Sam-Qc-w9C" secondAttribute="bottom" id="AbR-5j-aXr"/>
+                            <constraint firstAttribute="top" secondItem="qsl-Ex-VLV" secondAttribute="top" id="Iyu-0O-e1W"/>
+                            <constraint firstItem="AjN-go-XPL" firstAttribute="trailing" secondItem="nb3-eS-SYP" secondAttribute="trailing" constant="16" id="PZz-ze-i5d"/>
+                            <constraint firstItem="Sam-Qc-w9C" firstAttribute="leading" secondItem="AjN-go-XPL" secondAttribute="leading" id="THk-WI-tgR"/>
+                            <constraint firstItem="AjN-go-XPL" firstAttribute="trailing" secondItem="Sam-Qc-w9C" secondAttribute="trailing" id="dYs-Jq-eKk"/>
+                            <constraint firstItem="qsl-Ex-VLV" firstAttribute="leading" secondItem="5Qi-U8-oy2" secondAttribute="leading" id="igM-Ha-L02"/>
+                            <constraint firstItem="nb3-eS-SYP" firstAttribute="leading" secondItem="AjN-go-XPL" secondAttribute="leading" constant="16" id="ja0-UZ-Tth"/>
+                            <constraint firstItem="Sam-Qc-w9C" firstAttribute="top" secondItem="AjN-go-XPL" secondAttribute="top" id="qe7-qU-OkH"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Accounts" id="zhN-5Z-78N">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EsY-hE-9Pf"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <customObject id="DXy-k9-6zg" customClass="ContentSizeMonitor" customModule="AffordIQControls">
+                    <connections>
+                        <outlet property="delegate" destination="YFA-X6-rC5" id="0t7-1C-AbM"/>
+                    </connections>
+                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0E-Jh-hTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="-506"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="NAR-K3-Txw">
+            <size key="intrinsicContentSize" width="127" height="34"/>
+        </designable>
+        <designable name="jGB-Iq-Ehy">
+            <size key="intrinsicContentSize" width="158" height="34"/>
+        </designable>
+        <designable name="nb3-eS-SYP">
+            <size key="intrinsicContentSize" width="343" height="494"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="link_accounts_graphic" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

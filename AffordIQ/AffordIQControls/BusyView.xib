@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusyView" customModule="AffordIQControls" customModuleProvider="target">
+            <connections>
+                <outlet property="activity" destination="CMG-Wu-ZJA" id="fQ2-My-REW"/>
+                <outlet property="background" destination="jyO-aA-a4K" id="JpU-AF-E4H"/>
+                <outlet property="subtitle" destination="8xj-4W-w1A" id="USK-lT-W1C"/>
+                <outlet property="title" destination="j63-Ar-Y8G" id="Vxz-Sw-HOT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-aA-a4K" customClass="BackgroundImageView" customModule="AffordIQControls" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="CMG-Wu-ZJA">
+                    <rect key="frame" x="169" y="267" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j63-Ar-Y8G" userLabel="Title">
+                    <rect key="frame" x="94" y="206" width="187" height="41"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doing something..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xj-4W-w1A" userLabel="Subtitle">
+                    <rect key="frame" x="98.5" y="320" width="178" height="26.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CMG-Wu-ZJA" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-48" id="9xI-rk-T24"/>
+                <constraint firstItem="j63-Ar-Y8G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="CMs-U6-XbK"/>
+                <constraint firstItem="8xj-4W-w1A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="EXi-uf-oMY"/>
+                <constraint firstItem="jyO-aA-a4K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EdG-2G-YeW"/>
+                <constraint firstItem="jyO-aA-a4K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HCJ-Uo-1c3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j63-Ar-Y8G" secondAttribute="trailing" constant="20" id="O58-QV-ljJ"/>
+                <constraint firstItem="j63-Ar-Y8G" firstAttribute="centerX" secondItem="CMG-Wu-ZJA" secondAttribute="centerX" id="ZaY-On-Tdx"/>
+                <constraint firstAttribute="bottom" secondItem="jyO-aA-a4K" secondAttribute="bottom" id="dgo-8r-1Fc"/>
+                <constraint firstItem="CMG-Wu-ZJA" firstAttribute="top" secondItem="j63-Ar-Y8G" secondAttribute="bottom" constant="20" id="gIn-V1-zOa"/>
+                <constraint firstItem="CMG-Wu-ZJA" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="hLc-CS-P9E"/>
+                <constraint firstItem="8xj-4W-w1A" firstAttribute="centerX" secondItem="CMG-Wu-ZJA" secondAttribute="centerX" id="jL5-av-CQN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8xj-4W-w1A" secondAttribute="trailing" constant="20" id="mRd-CU-tHS"/>
+                <constraint firstAttribute="trailing" secondItem="jyO-aA-a4K" secondAttribute="trailing" id="uvC-kk-Rb4"/>
+                <constraint firstItem="8xj-4W-w1A" firstAttribute="top" secondItem="CMG-Wu-ZJA" secondAttribute="bottom" constant="16" id="wyg-ZH-mgi"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="86"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="jyO-aA-a4K">
+            <size key="intrinsicContentSize" width="750" height="1624"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

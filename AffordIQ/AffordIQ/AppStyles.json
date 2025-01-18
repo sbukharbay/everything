@@ -1,0 +1,191 @@
+{
+  "fonts": {
+    "sansSerif": {
+      "familyName": "Apple SD Gothic Neo"
+    },
+    "serif": {
+      "familyName": null
+    },
+    "monospace": {
+      "familyName": null
+    },
+    "rounded": {
+      "familyName": null
+    },
+    "redacted": {
+      "familyName": "Redacted Script"
+    },
+    "marker": {
+      "familyName": "Permanent Marker"
+    }
+  },
+  "backgroundImages": {
+    "default": {
+      "name": "background_opal_image"
+    }
+  },
+  "colors": {
+    "buttons": {
+      "primaryDark": {
+        "text": "#0F0728",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#0F0728",
+        "fill": "#72F0F0",
+        "border": "#72F0F0",
+        "disabledFill": "#99A0AA",
+        "disabledBorder": "#99A0AA",
+        "highlightedBorder": "#45AEBC",
+        "highlightedFill": "#45AEBC"
+      },
+      "secondaryDark": {
+        "text": "#72F0F0",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#45AEBC",
+        "fill": "#00000000",
+        "border": "#72F0F0",
+        "disabledFill": "#00000000",
+        "disabledBorder": "#72F0F0",
+        "highlightedBorder": "#45AEBC",
+        "highlightedFill": "#00000000"
+      },
+      "primaryLight": {
+        "text": "#FFFFFF",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#FFFFFF",
+        "fill": "#0F0728",
+        "border": "#0F0728",
+        "disabledFill": "#99A0AA",
+        "disabledBorder": "#99A0AA",
+        "highlightedBorder": "#484E59",
+        "highlightedFill": "#484E59"
+      },
+      "secondaryLight": {
+        "text": "#0F0728",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#484E59",
+        "border": "#0F0728",
+        "fill": "#00000000",
+        "disabledBorder": "#484E59",
+        "disabledFill": "#00000000",
+        "highlightedBorder": "#484E59",
+        "highlightedFill": "#00000000"
+      },
+      "inlineLight": {
+        "text": "#45AEBC",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#FFFFFF",
+        "fill": "#00000000",
+        "border": "#00000000",
+        "disabledFill": "#00000000",
+        "disabledBorder": "#00000000",
+        "highlightedBorder": "#00000000",
+        "highlightedFill": "#00000000"
+      },
+      "darkBlue": {
+        "text": "#FFFFFF",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#0F0728",
+        "fill": "#0F0728",
+        "border": "#0F0728",
+        "disabledFill": "#99A0AA",
+        "disabledBorder": "#99A0AA",
+        "highlightedBorder": "#45AEBC",
+        "highlightedFill": "#45AEBC"
+      },
+      "inlineDark": {
+        "text": "#72F0F0",
+        "disabledText": "#808080",
+        "highlightedText": "#72F0F0",
+        "fill": "#00000000",
+        "border": "#00000000",
+        "disabledFill": "#00000000",
+        "disabledBorder": "#00000000",
+        "highlightedBorder": "#00000000",
+        "highlightedFill": "#00000000"
+      },
+      "inlineWhite": {
+        "text": "#FFFFFF",
+        "disabledText": "#FFFFFF",
+        "highlightedText": "#FFFFFF",
+        "fill": "#00000000",
+        "border": "#00000000",
+        "disabledFill": "#00000000",
+        "disabledBorder": "#00000000",
+        "highlightedBorder": "#00000000",
+        "highlightedFill": "#00000000"
+      },
+      "clearDarkTeal": {
+        "text": "#2BA3B3",
+        "disabledText": "#99A0AA",
+        "highlightedText": "#45AEBC",
+        "fill": "#00000000",
+        "border": "#99A0AA",
+        "disabledFill": "#00000000",
+        "disabledBorder": "#99A0AA",
+        "highlightedBorder": "#45AEBC",
+        "highlightedFill": "#00000000"
+      },
+      "warningDark": {
+          "text": "#FFFFFF",
+          "disabledText": "#FFFFFF",
+          "highlightedText": "#FFFFFF",
+          "fill": "#E16367",
+          "border": "#E16367",
+          "disabledFill": "#99A0AA",
+          "disabledBorder": "#99A0AA",
+          "highlightedBorder": "#F64E53",
+          "highlightedFill": "#F64E53"
+      }
+    },
+    "text": {
+      "error": "#F25A85",
+      "fieldLight": "#000000",
+      "fieldDark": "#FFFFFF",
+      "info": "#606670"
+    },
+    "cells": {
+      "account": {
+        "sectionTitle": "#FFFFFF",
+        "background": "#FFFFFF",
+        "accessory": "#0084FF",
+        "title": "#000000",
+        "detail": "#000000"
+      },
+      "overlay": {
+        "sectionTitle": "#FFFFFF",
+        "background": "#FFFFFF",
+        "accessory": "#0084FF",
+        "title": "#000000",
+        "detail": "#444444"
+      }
+    },
+    "fields": {
+      "light": {
+        "fill": "#00000000",
+        "placeholder": "#00000099",
+        "text": "#000000",
+        "focusedBorder": "#606671",
+        "focusedErrorBorder": "#F25A85"
+      },
+      "dark": {
+        "fill": "#7F7F7F4C",
+        "placeholder": "#FFFFFF99",
+        "text": "#FFFFFF",
+        "focusedBorder": "#72F0F0",
+        "focusedErrorBorder": "#F25A85"
+      }
+    },
+    "gradients": {
+      "spending": [
+        "#F982B0",
+        "#EF215D",
+        "#ED1150"
+      ],
+      "income": [
+        "#30F2FC",
+        "#25BCC2",
+        "#028E8E"
+      ]
+    }
+  }
+}

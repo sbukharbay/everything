@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A70C64C0-206F-457B-BA59-35F9B262FFB4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21CE66F0-0AB9-43E0-96F1-A0602A55BA3D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AffordIQ/AffordIQUI/Dashboard/DataProvider/DashboardDataProvider+Operations.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3461073-8D36-4291-8875-613EB6C4606D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AffordIQ/AffordIQUI/Dashboard/DataProvider/DashboardDataProvider+Operations.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "810251FF-FFAA-4164-AF0A-51AD8B7E26BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AffordIQ/AffordIQUI/Root/FirebaseManager/FirebaseRCManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65">
+            <Locations>
+               <Location
+                  uuid = "810251FF-FFAA-4164-AF0A-51AD8B7E26BE - f8d57285ef8d907"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRRemoteConfigFetchAndActivateStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AffordIQUI.FirebaseRCManager.fetchRemoteConfig(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "AffordIQUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sula/Desktop/app-affordiq-ios/AffordIQ/AffordIQUI/Root/FirebaseManager/FirebaseRCManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "810251FF-FFAA-4164-AF0A-51AD8B7E26BE - f8d57285ef8d907"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRRemoteConfigFetchAndActivateStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AffordIQUI.FirebaseRCManager.fetchRemoteConfig(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "AffordIQUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sula/Desktop/app-affordiq-ios/AffordIQ/AffordIQUI/Root/FirebaseManager/FirebaseRCManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "627567FB-8982-4CE6-BD23-6C224C12B4D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AffordIQ/AffordIQUI/Root/FirebaseManager/FirebaseRCManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EE74EFD-700B-48BC-B1F3-8DE296F84A47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AffordIQ/AffordIQUI/Root/FirebaseManager/FirebaseRCManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2E58D5C-16F4-46CF-A0D9-838E8D85F4A5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AffordIQ/AffordIQUI/Root/FirebaseManager/FirebaseRCManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

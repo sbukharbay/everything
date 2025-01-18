@@ -1,0 +1,6 @@
+framework module Pods_AffordIQControls {
+  umbrella header "Pods-AffordIQControls-umbrella.h"
+
+  export *
+  module * { export * }
+}

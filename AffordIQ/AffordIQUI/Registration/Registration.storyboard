@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Ke-zW-Vch">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration-->
+        <scene sceneID="fmx-Rk-cMH">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="5Ke-zW-Vch" userLabel="Registration" customClass="RegistrationViewController" customModule="AffordIQUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sov-HN-9sa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ibd-9q-ndW" customClass="BackgroundImageView" customModule="AffordIQControls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-Fb-zjp">
+                                <rect key="frame" x="16" y="92" width="343" height="510"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x1J-zC-1jI">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="510"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFK-nQ-Nc6" customClass="FormScrollView" customModule="AffordIQControls">
+                                <rect key="frame" x="16" y="92" width="343" height="510"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bTG-Rr-IvT">
+                                        <rect key="frame" x="16" y="16" width="311" height="1059"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xe2-mp-TUu">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="95"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HGb-86-mRm">
+                                                        <rect key="frame" x="63.5" y="0.0" width="184" height="43.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registration" translatesAutoresizingMaskIntoConstraints="NO" id="Azm-0b-NSc">
+                                                                <rect key="frame" x="0.0" y="7" width="48" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="OHA-kR-NJV"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="ylq-TH-qxu"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kq-aQ-aZ6" customClass="HeadingTitleLabel" customModule="AffordIQControls">
+                                                                <rect key="frame" x="48" y="6" width="136" height="32"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please complete the form below to register an account." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t24-Hp-MO7" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                        <rect key="frame" x="20.5" y="51.5" width="269.5" height="43.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Given Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-Y6-6AP" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="107" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Given Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Bo-2Q-qNQ" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="141" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.GivenName"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="given-name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5Ke-zW-Vch" id="89d-lE-dyt"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftN-Cn-nrN" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="191" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family Name (Surname)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVS-p1-3Ef" userLabel="Family Name" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="225" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Family Name (Surname)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Cy-RB-o6k" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="259" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.FamilyName"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="family-name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5Ke-zW-Vch" id="fvS-yv-C4u"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lM-Ci-JHy" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="309" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dew-rM-web" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="343" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBc-Vb-7Ff" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="377" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.DateOfBirth"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5Ke-zW-Vch" id="Gj4-tH-VgY"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-QX-Cgu" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="427" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1X-1y-vjS" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="461" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1p3-rK-mSK" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="495" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.MobileNumber"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5Ke-zW-Vch" id="hQj-W5-Kro"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYH-6Q-gv6" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="545" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-c6-5gW" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="579" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Rh-vy-whl" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="613" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.EmailAddress"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no" textContentType="username"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5Ke-zW-Vch" id="nfn-bA-VHi"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tC-Lr-T4P" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="663" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4s-DE-B2O" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="697" width="311" height="22"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Password">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-2m-HKZ" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="731" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.Password"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5Ke-zW-Vch" id="1Mg-1w-79r"/>
+                                                </connections>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jOq-X0-yq5">
+                                                <rect key="frame" x="0.0" y="781" width="311" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="cyz-Gs-M9g"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbk-2Y-aYA" customClass="FieldLabelDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="893" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-Gj-nBB" customClass="TextFieldDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="927" width="311" height="38"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.ConfirmPassword"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1K-qj-F6b" customClass="ErrorLabel" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="977" width="311" height="22"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4J-Ij-4wi" customClass="PrimaryButtonDark" customModule="AffordIQControls">
+                                                <rect key="frame" x="0.0" y="1011" width="311" height="48"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Registration.CreateAccount"/>
+                                                <state key="normal" title="Create Account">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="register:" destination="5Ke-zW-Vch" eventType="touchUpInside" id="FQG-dF-a9T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bTG-Rr-IvT" secondAttribute="bottom" constant="16" id="0j7-q8-mk7"/>
+                                    <constraint firstItem="bTG-Rr-IvT" firstAttribute="top" secondItem="LFK-nQ-Nc6" secondAttribute="top" constant="16" id="lXN-SQ-G1a"/>
+                                    <constraint firstItem="bTG-Rr-IvT" firstAttribute="trailing" secondItem="LFK-nQ-Nc6" secondAttribute="trailing" constant="-16" id="li8-hM-pNP"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Gmx-Fy-Sk4"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="XvV-hd-mVQ"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                        <real key="value" value="48"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yja-yL-xSH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Registration"/>
+                        <constraints>
+                            <constraint firstItem="ibd-9q-ndW" firstAttribute="bottom" secondItem="sov-HN-9sa" secondAttribute="bottom" id="6zt-3J-Hg7"/>
+                            <constraint firstItem="bTG-Rr-IvT" firstAttribute="trailing" secondItem="PuO-Fb-zjp" secondAttribute="trailing" constant="-16" id="8hp-Hv-kHF"/>
+                            <constraint firstItem="LFK-nQ-Nc6" firstAttribute="trailing" secondItem="yja-yL-xSH" secondAttribute="trailing" constant="-16" id="BLN-4l-lrH"/>
+                            <constraint firstItem="ibd-9q-ndW" firstAttribute="trailing" secondItem="yja-yL-xSH" secondAttribute="trailing" id="Drl-rk-ttF"/>
+                            <constraint firstItem="LFK-nQ-Nc6" firstAttribute="centerX" secondItem="sov-HN-9sa" secondAttribute="centerX" id="I93-qr-dPb"/>
+                            <constraint firstItem="ibd-9q-ndW" firstAttribute="top" secondItem="sov-HN-9sa" secondAttribute="top" id="Jhb-LZ-IyT"/>
+                            <constraint firstItem="PuO-Fb-zjp" firstAttribute="top" secondItem="yja-yL-xSH" secondAttribute="top" constant="28" id="Kin-SW-bbQ"/>
+                            <constraint firstItem="PuO-Fb-zjp" firstAttribute="bottom" secondItem="yja-yL-xSH" secondAttribute="bottom" constant="-16" id="VMc-OD-coW"/>
+                            <constraint firstItem="LFK-nQ-Nc6" firstAttribute="leading" secondItem="yja-yL-xSH" secondAttribute="leading" constant="16" id="btM-AE-xeI"/>
+                            <constraint firstItem="LFK-nQ-Nc6" firstAttribute="bottom" secondItem="yja-yL-xSH" secondAttribute="bottom" constant="-16" id="eCv-cA-2ST"/>
+                            <constraint firstItem="bTG-Rr-IvT" firstAttribute="leading" secondItem="PuO-Fb-zjp" secondAttribute="leading" constant="16" id="fsb-Zp-C9M"/>
+                            <constraint firstItem="LFK-nQ-Nc6" firstAttribute="centerY" secondItem="sov-HN-9sa" secondAttribute="centerY" id="gWy-fY-Gt1"/>
+                            <constraint firstItem="PuO-Fb-zjp" firstAttribute="leading" secondItem="yja-yL-xSH" secondAttribute="leading" constant="16" id="ioA-iE-hfC"/>
+                            <constraint firstItem="ibd-9q-ndW" firstAttribute="leading" secondItem="yja-yL-xSH" secondAttribute="leading" id="oDS-J0-cSv"/>
+                            <constraint firstItem="LFK-nQ-Nc6" firstAttribute="top" secondItem="PuO-Fb-zjp" secondAttribute="top" id="sdw-c7-TSz"/>
+                            <constraint firstItem="PuO-Fb-zjp" firstAttribute="trailing" secondItem="yja-yL-xSH" secondAttribute="trailing" constant="-16" id="vsj-bR-AeC"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundBlurView" destination="PuO-Fb-zjp" id="T7D-Ld-GxO"/>
+                        <outlet property="blurViewBottomConstraint" destination="VMc-OD-coW" id="yCn-AV-KOy"/>
+                        <outlet property="blurViewTopConstraint" destination="Kin-SW-bbQ" id="gSQ-m8-va2"/>
+                        <outlet property="confirmPassword" destination="jMi-Gj-nBB" id="zSM-rH-P9I"/>
+                        <outlet property="confirmPasswordError" destination="X1K-qj-F6b" id="2Lq-Iq-CD5"/>
+                        <outlet property="confirmPasswordTitleLabel" destination="wbk-2Y-aYA" id="wHZ-Pv-ghY"/>
+                        <outlet property="dateOfBirth" destination="sBc-Vb-7Ff" id="fTk-3i-lMM"/>
+                        <outlet property="dateOfBirthError" destination="QVB-QX-Cgu" id="vrL-bZ-4SC"/>
+                        <outlet property="emailAddress" destination="8Rh-vy-whl" id="Uf8-NU-iGC"/>
+                        <outlet property="emailAddressError" destination="2tC-Lr-T4P" id="dOj-R6-yjw"/>
+                        <outlet property="familyName" destination="4Cy-RB-o6k" id="1BM-Jr-9aE"/>
+                        <outlet property="familyNameError" destination="9lM-Ci-JHy" id="YO6-QC-Nn2"/>
+                        <outlet property="fieldsStackView" destination="bTG-Rr-IvT" id="WW0-Zd-38S"/>
+                        <outlet property="givenName" destination="0Bo-2Q-qNQ" id="Cgh-tT-N9l"/>
+                        <outlet property="givenNameError" destination="ftN-Cn-nrN" id="Pvp-md-KI5"/>
+                        <outlet property="mobileNumber" destination="1p3-rK-mSK" id="bRY-ni-cjH"/>
+                        <outlet property="mobileNumberError" destination="JYH-6Q-gv6" id="rWc-xc-maH"/>
+                        <outlet property="password" destination="Ghd-2m-HKZ" id="YAC-PT-5mJ"/>
+                        <outlet property="passwordRulesVStackView" destination="jOq-X0-yq5" id="2tZ-25-ykv"/>
+                        <outlet property="passwordTitleLabel" destination="J4s-DE-B2O" id="C4T-Bh-9bO"/>
+                        <outlet property="scrollView" destination="LFK-nQ-Nc6" id="DrE-cg-gTP"/>
+                        <outlet property="subTitleLabel" destination="t24-Hp-MO7" id="bwF-x0-Cgo"/>
+                        <outlet property="submitButton" destination="C4J-Ij-4wi" id="8j0-l9-C3x"/>
+                        <outlet property="titleLabel" destination="4kq-aQ-aZ6" id="fgZ-aK-VZu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7q-7I-iFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="rFy-i0-RYv" customClass="ContentSizeMonitor" customModule="AffordIQControls">
+                    <connections>
+                        <outlet property="delegate" destination="5Ke-zW-Vch" id="2YZ-s3-AWj"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="100" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0Bo-2Q-qNQ">
+            <size key="intrinsicContentSize" width="120" height="38"/>
+        </designable>
+        <designable name="1p3-rK-mSK">
+            <size key="intrinsicContentSize" width="148.5" height="38"/>
+        </designable>
+        <designable name="2tC-Lr-T4P">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="4Cy-RB-o6k">
+            <size key="intrinsicContentSize" width="219.5" height="38"/>
+        </designable>
+        <designable name="4iC-Y6-6AP">
+            <size key="intrinsicContentSize" width="92" height="22"/>
+        </designable>
+        <designable name="4kq-aQ-aZ6">
+            <size key="intrinsicContentSize" width="136" height="32"/>
+        </designable>
+        <designable name="8Rh-vy-whl">
+            <size key="intrinsicContentSize" width="62.5" height="38"/>
+        </designable>
+        <designable name="9lM-Ci-JHy">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="C4J-Ij-4wi">
+            <size key="intrinsicContentSize" width="164" height="48"/>
+        </designable>
+        <designable name="Ghd-2m-HKZ">
+            <size key="intrinsicContentSize" width="98" height="38"/>
+        </designable>
+        <designable name="H1X-1y-vjS">
+            <size key="intrinsicContentSize" width="117" height="22"/>
+        </designable>
+        <designable name="J4s-DE-B2O">
+            <size key="intrinsicContentSize" width="72" height="22"/>
+        </designable>
+        <designable name="JYH-6Q-gv6">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="QVB-QX-Cgu">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="X1K-qj-F6b">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="dew-rM-web">
+            <size key="intrinsicContentSize" width="97.5" height="22"/>
+        </designable>
+        <designable name="ftN-Cn-nrN">
+            <size key="intrinsicContentSize" width="108" height="22"/>
+        </designable>
+        <designable name="hdW-c6-5gW">
+            <size key="intrinsicContentSize" width="41.5" height="22"/>
+        </designable>
+        <designable name="ibd-9q-ndW">
+            <size key="intrinsicContentSize" width="750" height="1624"/>
+        </designable>
+        <designable name="jMi-Gj-nBB">
+            <size key="intrinsicContentSize" width="171.5" height="38"/>
+        </designable>
+        <designable name="nVS-p1-3Ef">
+            <size key="intrinsicContentSize" width="179.5" height="22"/>
+        </designable>
+        <designable name="sBc-Vb-7Ff">
+            <size key="intrinsicContentSize" width="126.5" height="38"/>
+        </designable>
+        <designable name="t24-Hp-MO7">
+            <size key="intrinsicContentSize" width="418.5" height="22"/>
+        </designable>
+        <designable name="wbk-2Y-aYA">
+            <size key="intrinsicContentSize" width="137" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="registration" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

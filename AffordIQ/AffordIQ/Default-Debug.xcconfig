@@ -1,0 +1,28 @@
+//
+//  Default.xcconfig
+//  AffordIQ
+//
+//  Created by Sultangazy Bukharbay on 08/01/2021.
+//  Copyright © 2021 BlackArrow Financial Solutions Limited. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../Pods/Target Support Files/Pods-AffordIQ/Pods-AffordIQ.debug.xcconfig"
+
+// Auth0:
+//-------
+BASE_URI = testapi.affordiq.com
+BASE_PORT =
+CLIENT_ID = jwxJz7xhpdpqNxbDuR7wjnbfK1pKZsgq
+WEB_CLIENT_ID = RCbGc2Wh2xHMxwcvUowWWpETADYd10MN
+WEB_CLIENT_SECRET = YtMcQJv0bZ4iK3anPz6Ly4S0QXwjywz-sEJIYof3KOq3TS_yUV11gWAPLaKmNsM9
+WEB_GRANT_TYPE = client_credentials
+ISSUER_URI = testlogin.affordiq.com
+SCOPES = openid profile offline_access
+REDIRECT_URI = $(PRODUCT_BUNDLE_IDENTIFIER):/$()/affordabilityapi.affordiq.com/ios/$(PRODUCT_BUNDLE_IDENTIFIER)/callback
+LOGOUT_URI = $(PRODUCT_BUNDLE_IDENTIFIER):/$()/logout
+OPEN_BANKING_URI = auth.truelayer.com
+AUDIENCE_URI = http:/$()/testapi.affordiq.com/
+APP_DISPLAY_NAME = Debug

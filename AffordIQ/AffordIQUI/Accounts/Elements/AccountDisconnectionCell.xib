@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AccountDisconnectionCell" id="KGk-i7-Jjw" customClass="AccountDisconnectionCell" customModule="AffordIQUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-zF-ZsM" customClass="SecondaryButtonLight" customModule="AffordIQControls">
+                        <rect key="frame" x="32" y="4" width="256" height="54"/>
+                        <accessibility key="accessibilityConfiguration" identifier="AccountDetails.Disconnect"/>
+                        <state key="normal" title="Unlink Account"/>
+                        <connections>
+                            <action selector="disconnect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ggz-Et-qhX"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qv5-zF-ZsM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="bW8-QF-au9"/>
+                    <constraint firstAttribute="bottom" secondItem="qv5-zF-ZsM" secondAttribute="bottom" priority="999" constant="4" id="gow-I6-KP2"/>
+                    <constraint firstAttribute="trailing" secondItem="qv5-zF-ZsM" secondAttribute="trailing" constant="32" id="pQA-HT-Fqd"/>
+                    <constraint firstItem="qv5-zF-ZsM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="sgx-qO-A5H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="42.028985507246382" y="60.602678571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="qv5-zF-ZsM">
+            <size key="intrinsicContentSize" width="122" height="34"/>
+        </designable>
+    </designables>
+</document>
